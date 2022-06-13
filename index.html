@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Desafio JavaScript</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>
+
+</head>
+
+<body>
+    <!--Tarjeta de producto Interactiva-->
+    <div class="tarjeta-padre">
+        <div class="tarjeta-productos">
+            <img src="assets/img/laptop-1.png" alt="producto">
+
+            <p class="titulo">Notebook KD</p>
+            <input class="input" type="number" value="0">
+            <input class="colores" type="text" value="Color">
+
+            <p class="precios" >Precio: <span class="valor" >400000</span></p>
+
+            <button onclick="
+            cantidad = document.querySelector('.input')
+            precio = document.querySelector('.valor')
+            col = document.querySelector('.colores')
+            total1 = document.querySelector('.total')
+            cant1 = document.querySelector('.cant')
+            color1 = document.querySelector('.color')
+            
+            total1.innerHTML = Number(cantidad.value)*precio.innerHTML
+            cant1.innerHTML = cantidad.value
+            
+            color1.style.backgroundColor = col.value
+            color1.style.color = col.value
+            color1.style.borderRadius='50%'
+            ">Calcular Total</button>
+        </div>
+
+        <div class="totales">
+            <p>Total: $<span class="total">0</span> </p>
+            <p>Cantidad: <span class="cant">0</span> </p>
+            <p>Color:<span class="color">0</span>
+        </div>
+        </p>
+    </div>
+    </div>
+</body>
+
+</html>

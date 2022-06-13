@@ -1,0 +1,80 @@
+.tarjeta-padre {
+    display: flex;
+    justify-content: center;
+}
+
+
+.tarjeta-productos {
+    color: white;
+    background-color: rgb(140, 167, 22);
+
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5%;
+    border-width: 2px;
+    border-color: gray;
+}
+
+.titulo {
+    text-align: center;
+    font-weight: bold;
+}
+
+.input {
+
+    margin: 1%;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.colores {
+    margin: 1%;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.precios {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+button {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 150px;
+    align-self: center;
+
+    color: white;
+    background-color: orange;
+    border-width: 2px;
+    border-color: gray;
+}
+
+.totales {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+
+
+}
+/* Circulo color*/
+.color {
+    background: rgb(10, 10, 10);
+    border-radius: 0.8em;
+    color: rgb(10, 10, 10);
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1.6em;
+    margin-right: 15px;
+    text-align: center;
+    width: 1.6em;
+}
